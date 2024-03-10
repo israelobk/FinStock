@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace FinStock.Domain.Models
 {
 
-  //  [Table("Stocks")]
+    [Table("Stocks")]
     public class Stock
     {
         public int Id { get; set; }
@@ -21,6 +21,6 @@ namespace FinStock.Domain.Models
         public string Industry { get; set; } = string.Empty;
         public long MarketCap { get; set; }
         public List<Comment> Comments { get; set; } = new List<Comment>();
-       // public List<Portfolio> Portfolios { get; set; } = new List<Portfolio>();
+        public List<Portfolio> Portfolios { get; set; } = new List<Portfolio>();
     }
 }
